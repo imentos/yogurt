@@ -54,6 +54,7 @@ void printTemperature(DeviceAddress deviceAddress)
 
     // ignore the temp below 110
     if (tempF < 115) {
+      digitalWrite(ledPin, LOW);
       return;
     }
 
